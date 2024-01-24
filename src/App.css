@@ -1,0 +1,310 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  overflow-x: hidden;
+}
+.container{
+  padding: 5rem;
+}
+.Container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 360px;
+  padding: 20px 10px;
+  margin: 7.5rem auto;
+  border-radius: 8px;
+  box-shadow: 0 3px 6px 0 rgba(90, 90, 90, 0.9);
+  background: white;
+  font-family: 'Montserrat', sans-serif; 
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  /* display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  &:hover {
+    transform: scale(1.1);
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+  } */
+}
+.Container-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+.hero-container{
+  position: relative;
+  width: 100%;
+  height: 95vh;
+  background-color: rgb(5, 31, 5);
+  background-image: url(assets/hero-img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+.registerBtn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 1.5rem;
+  margin-right: 1.5rem;
+  text-decoration: none;
+  background-color: rgb(5, 31, 5);
+  width: fit-content;
+  word-wrap: break-word;
+  padding: 1rem 2.5rem;
+  border-radius: 1rem;
+  color: #fff;
+  transform: scale(1);
+  transition: transform 0.5s ease-in-out;
+  animation: blink 1s infinite; /* Add animation for blinking effect */
+  cursor: pointer;
+}
+
+.go-btn:hover,
+.registerBtn:hover {
+  color: #000000;
+  background-color: #fff;
+  text-decoration: none;
+  transform: scale(1.05);
+  animation: none; /* Disable the animation on hover */
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.hero-text{
+  color: #fff; 
+  text-align: center;  
+  letter-spacing: 2px;
+  font-family: fantasy;
+  font-weight: 900;
+
+  h1{
+      font-size: 60px;
+      margin-bottom: 2rem;
+  } 
+  p{
+      width: 470px;
+      margin: auto;
+      font-size: 17px;
+  }
+}
+.go-btn{
+  margin-top: 1.5rem;
+  text-decoration: none;
+  background-color: rgb(5, 31, 5);
+  width: fit-content;
+  word-wrap: break-word;
+  padding: 1rem 3rem;
+  border-radius: 1rem;
+  color: #e3e1e1; 
+  transform: scale(1);  
+  transition: transform 0.5s ease-in-out, 0.5s ease-in-out; 
+  cursor: pointer;
+}
+.go-btn:hover, .registerBtn:hover {
+  color: #000000;
+  background-color: #fff;
+  transition: transform 0.5s ease-in-out, 0.5s  ease-in-out; 
+  text-decoration: none;
+  transform: scale(1.05);
+}
+.about-container{
+  background-color: #fff;
+  display: flex;
+  gap: 2rem;
+}
+.about-content{
+  text-align: justify;
+  width: 80%;
+  margin: 3rem auto;
+  color: rgb(63, 135, 24); 
+  font-family: fantasy;
+  font-weight: 600;
+
+  .about-title {
+      margin-bottom: 1rem;
+      font-size: 40px;
+  }  
+  .about-text {
+      font-size: 17px;
+  } 
+}
+.plant{
+  width: 30%;
+  height: 370px;
+  /* border: 2px solid black; */
+}
+.issue-container{
+  background-color: #000;
+  display: flex;
+  color: rgb(63, 135, 24);
+  text-align: center;    
+}
+.issue-content{
+  .issue-title {
+      margin-bottom: 1rem;
+      font-size: 30px;
+      font-family: fantasy;
+      font-weight: 900;
+  }  
+  .issue-text {
+      font-size: 17px;
+      font-family: fantasy;
+      font-weight: 600;
+  } 
+}
+.img{
+  position: relative;
+}
+.sprout{    
+  width: 80px;
+  height: 80px;
+  justify-self: baseline;
+  position: absolute;
+  bottom: 50%;
+  right: 50%;    
+}
+.response-container{
+  background-color: rgb(63, 135, 24);
+  background-image: url(./assets/Screenshot\ 2024-01-20\ 160224.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top left ;
+
+  .response-text{
+      width: 100%;
+      margin: auto;
+      p{
+          font-size: 20px;
+          font-weight: 600;
+          font-family: fantasy;
+          font-weight: 600;
+          
+      }
+  }
+}
+.RegisterAccount-container{ 
+  display: flex;
+  position: relative;
+  flex-direction: column; 
+  width: 70%;
+  background-color: #ffffff;
+  padding: 2.3rem;
+  position: relative;
+  margin: 2rem auto;
+}
+.name, .password{
+  display: flex;
+  flex-direction: column;
+
+}
+.RegisterAccount-container label{
+  color: #494949;
+  margin-bottom: 1rem;
+}
+.RegisterAccount-container input{
+  margin-bottom: 2rem;
+  background-color: #e6ebf0;
+  border: none;
+  border-radius: 0.3rem;
+  padding: 0.7rem;
+  outline: none;
+  border: 1.5px solid #e6ebf0;
+}
+.registerText {
+  margin: 1rem auto ;
+  color: #494949;
+}
+.RegisterAccount-container button{
+  border: none;
+  background-color: rgb(97, 155, 63);
+  padding: 0.7rem;
+  color: #fff;
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+.RegisterAccount-container button:hover{    
+  transform: scale(1.05);
+  transition: all 0.4s ease-in-out;
+}
+
+/* User Preference Section */
+
+.userPreference-container{
+  background-color: rgb(59, 90, 90);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.userPreference-form{
+  display: flex;
+  position: relative;
+  flex-direction: column; 
+  width: 50%;
+  background-color: transparent;
+  padding: 2.3rem;
+  position: relative;
+  margin: 1rem auto;
+
+  label{
+      color: rgb(39, 38, 38);
+      margin: 1rem  0rem;
+      font-size: 20px;
+  }
+  input{
+  background-color: transparent;
+  border: none;
+  border-radius: 0.2rem;
+  padding: 0.7rem;
+  outline: none;
+  color: rgb(39, 38, 38);
+  border: 1.5px solid #bcbcc3;
+  }    
+}
+.done-btn{    
+  text-decoration: none;
+  background-color: grey;
+  width: fit-content;
+  word-wrap: break-word;
+  cursor: pointer;
+  padding: 1rem 3rem;
+  margin-bottom:  1.5rem;
+  border-radius: 1rem;
+  color: black; 
+  transform: scale(1);  
+  transition: transform 0.5s ease-in-out, 0.5s ease-in-out; 
+}
+.done-btn:hover{    
+  transition: transform 0.5s ease-in-out, 0.5s  ease-in-out; 
+  text-decoration: none;
+  background-color: rgb(237, 234, 234);
+  color: gray;
+  transform: scale(1.05);
+}
+
+/* Settings section */
+
