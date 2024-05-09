@@ -68,11 +68,11 @@ function App() {
 
     <div className='App' id='appp'>
       <Hero scrollToSection={scrollToSection} isvisible={isvisible} setisvisible={setisvisible}></Hero>
-      <About></About>
+      {/* <About></About>
       <Issue></Issue>
       <Response></Response>
       <RegisterAccount  scrollToSection={scrollToSection}></RegisterAccount>
-      <UserPreference scrollToSection={scrollToSection}></UserPreference>
+      <UserPreference scrollToSection={scrollToSection}></UserPreference> */}
      {isvisible && <Modal className='Container' onClose={handleCloseModal}>
         <AppLabel>Farmer's Weather Dashboard</AppLabel>
         {dataweather ? <Weatherappinfo dataweather={dataweather} goback={handleBack}></Weatherappinfo> : <CityComponents setcity={setcity} fetchprogram={fetchprogram} />}

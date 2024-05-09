@@ -11,9 +11,9 @@ const Hero = ({ scrollToSection,setisvisible,handleShowWeather }) => {
 
   return (
     <div className="hero-container container">
-      <div className="registerBtn" onClick={handleRegisterClick}>
+      {/* <div className="registerBtn" onClick={handleRegisterClick}>
         Register
-      </div>
+      </div> */}
 
       <div className="hero-text">
         <h1>Weather Dashboard</h1>
